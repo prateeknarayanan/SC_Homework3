@@ -9,8 +9,11 @@
 #include "Intake.h"
 int main()
 {
-	Intake*intake = new Intake;
-	Shooter*shooter = new Shooter;
+	Intake*intake = new Intake(3, 4);
+	Shooter*shooter = new Shooter(1, 2);
+	delete intake;
+	delete shooter;
+	return 0;
 
 }
 
